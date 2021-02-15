@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Table</title>
+    <link rel="stylesheet" media="screen" type="text/css" href="style.css" />
+    <script type="text/javascript" src="functions.js"></script>
+</head>
+<body onload="readCookieAndCreateTable()" >
+    <h1>Dynamicznie tworzona tabelka, której komórki zmieniają kolory, gdy je kliknąć</h1>
+    <form method="post" id="input-form">
+        <label for="no-of-rows">Liczba wierszy</label>
+        <input type="text" id="no-of-rows" name="no-of-rows">
+        <label for="no-of-columns">Liczba kolumn</label>
+        <input type="text" id="no-of-columns" name="no-of-rows">
+        <input type="submit" value="Wygeneruj" onclick="validateAndSaveCookie()">
+    </form>
+    <div id="dynamic-table-placeholder">
+
+    </div>
+</body>
+</html>
